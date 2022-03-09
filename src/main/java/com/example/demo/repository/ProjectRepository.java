@@ -13,7 +13,7 @@ public interface ProjectRepository extends JpaRepository<Project, Long> {
 
     List<Project> findAllByUserOrderByCreatedDataDesc(User user);
 
-    List<Project> findAllByOrderByCreatedDateDesc();
+    List<Project> findAllByOrderByCreatedDataDesc();
 
     Optional<Project> findProjectByIdAndUser(Long id, User user);
 }
